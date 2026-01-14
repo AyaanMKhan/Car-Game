@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Car"
+run/main_scene="uid://bqrn3s8mc1l5y"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
