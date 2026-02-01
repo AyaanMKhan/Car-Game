@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bs15b51lu8ute"]
+[gd_scene load_steps=3 format=3 uid="uid://bs15b51lu8ute"]
 
 [ext_resource type="PackedScene" uid="uid://ci52bv1m15cbs" path="res://car_model/cars/Doge.tscn" id="2_uoj53"]
 
@@ -33,15 +33,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 "
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_uoj53"]
-size = Vector3(1.64486, 0.945206, 4.18484)
-
 [node name="Car" type="CharacterBody3D"]
 script = SubResource("GDScript_7822p")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00201797, 0.667976, 0.0526581)
-shape = SubResource("BoxShape3D_uoj53")
 
 [node name="Pivot" type="Node3D" parent="."]
 
